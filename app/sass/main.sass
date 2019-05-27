@@ -3,6 +3,9 @@
 @import "fonts"
 @import "libs"
 
+*
+	box-sizing: border-box
+
 body
 	background: url(../img/bg-desktop.svg) $accent
 	background-repeat: no-repeat
@@ -23,13 +26,35 @@ h1, h2, h3, h4, h5, h6
 	margin: 0 auto
 	display: grid
 	grid-template-columns: 1fr
-	grid-template-rows: minmax(95px) minmax(600px) minmax(65px) 1fr
+	grid-template-rows: minmax(95px, auto) minmax(600px, auto) minmax(65px, auto) 1fr
 	.logo
 		margin-top: 50px
 	.content
 		display: grid
-		grid-template-columns: 720px 530px
+		grid-template-columns: 1fr 1fr
 		grid-column-gap: 60px
+		margin-top: 50px
+	.item1
+		display: grid
+		align-items: center
+		img
+			width: 100%
+			height: auto
+	.item2
+		margin-top: 45px
+		p
+			padding-top: 20px
+		button
+			width: 200px
+			background: #ffffff
+			margin-top: 30px
+			padding: 20px
+			border-radius: 40px
+			color: $accent
+			font-weight: 700
+		.social-btn
+			text-align: right
+
 
 
 
