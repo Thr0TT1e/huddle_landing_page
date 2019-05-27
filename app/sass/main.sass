@@ -1,0 +1,73 @@
+@import "normalize"
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	background: url(../img/bg-desktop.svg) $accent
+	background-repeat: no-repeat
+	background-size: cover
+	font-family: $body-font
+	color: $text
+
+h1, h2, h3, h4, h5, h6
+	font-family: $headings-font
+	font-weight: 700
+
+.grid-item
+	border: 1px solid #000
+
+.main
+	max-width: 1440px
+	width: 100%
+	margin: 0 auto
+	display: grid
+	grid-template-columns: 1fr
+	grid-template-rows: minmax(95px) minmax(600px) minmax(65px) 1fr
+	.logo
+		margin-top: 50px
+	.content
+		display: grid
+		grid-template-columns: 720px 530px
+		grid-column-gap: 60px
+
+
+
+
+//
+//
+//
+//.main
+//	display: grid
+//
+//.logo
+//	margin: 60px 0 0 80px
+//
+//.content
+//	display: grid
+//	grid-template-columns: 1fr 1fr
+//	grid-template-rows: 1fr
+//	margin: 100px 80px 0 80px
+//	.item1
+//		display: grid
+//		margin-right: 60px
+//	.item2
+//		display: grid
+//	h1
+//	margin-top: 40px
+//	p
+//	margin-top: 40px
+//	margin-bottom: 30px
+//
+//	button
+//	width: 200px
+//	height: 55px
+//	background: #fff
+//	border-radius: 50px
+//	border: none
+//	color: $accent
+//
+//.social-btn
+//
+//
+//@import "media" // Always at the end
