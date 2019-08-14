@@ -7,7 +7,7 @@
 
 [build]
   base    = "/"
-  command = "make"
+  command = "build"
   publish = "/dist/"
 
 # Production context: All deploys from the main
